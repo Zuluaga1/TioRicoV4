@@ -22,7 +22,6 @@ import java.util.Calendar;
 public class MainActivity extends AppCompatActivity {
 
     double latitud, longitud;
-
     private static final int REQUEST_CODE_LOCATION_PERMISSION = 1;
     private TextView txtLat;
     private TextView txtLong;
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         txtLat = findViewById(R.id.latitud_text);
         txtLong = findViewById(R.id.longitud_text);
         txt_Phone = findViewById(R.id.phone_text);
-
 
         //Permisos de Localización
         if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -75,8 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
     private void SendMessage(){
         int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS);
         if (permissionCheck==PackageManager.PERMISSION_GRANTED) {
