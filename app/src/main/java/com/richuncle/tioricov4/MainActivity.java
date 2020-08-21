@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView txtLat;
     private TextView txtLong;
     EditText txt_Phone;
-    //hola mundo
+    //Aquí veremos la creación de las variables
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         txtLat = findViewById(R.id.latitud_text);
         txtLong = findViewById(R.id.longitud_text);
         txt_Phone = findViewById(R.id.phone_text);
+        //Para igualar las variables con la gui
 
         //Permisos de Localización
         if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
