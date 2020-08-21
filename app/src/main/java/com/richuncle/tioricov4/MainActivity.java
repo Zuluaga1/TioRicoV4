@@ -26,10 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView txtLat;
     private TextView txtLong;
     EditText txt_Phone;
-
-
-
-    
+    //hola mundo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
